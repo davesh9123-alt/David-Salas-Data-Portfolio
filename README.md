@@ -117,7 +117,7 @@ La grafica muestra como los ingresos de ambos grupos fueron muy similares los pr
 <img width="1179" height="582" alt="Screenshot_20260604142226" src="https://github.com/user-attachments/assets/91bce844-93d7-4d6f-9ed4-e58bddc0db16" />
 
 
-[Proyecto: Analitica de Marketing en Showz (Analisis de Cohortes)](https://github.com/davesh9123-alt/S10_Analitica_Marketing_Showz_Cohortes)
+## [Proyecto: Analitica de Marketing en Showz (Analisis de Cohortes)](https://github.com/davesh9123-alt/S10_Analitica_Marketing_Showz_Cohortes)
 
 El objetivo de este analisis fue optimizar los gastos de Marketing de la tienda online Showz,  una de las tiendas en línea más populares y confiables a nivel mundial para coleccionistas de figuras de acción.
 
@@ -129,7 +129,7 @@ El mapa de calor muestra mas claramente como la retencion disminuye a lo largo d
 <img width="1015" height="619" alt="Screenshot_20260604133835" src="https://github.com/user-attachments/assets/91f0134c-ef34-4c2e-9e54-af19a760bfd8" />
 
 
-[Proyecto: ICE Games Sales - ¿Qué juegos son más exitosos?](https://github.com/davesh9123-alt/ICE_games_sales_2016)
+## [Proyecto: ICE Games Sales - ¿Qué juegos son más exitosos?](https://github.com/davesh9123-alt/ICE_games_sales_2016)
 
 Este análisis se centra en los factores que influyen en el éxito de los videojuegos vendidos en la tienda online de ICE. Utilizando datos de 2016 sobre reseñas de usuarios y expertos, géneros, plataformas y ventas históricas, el objetivo es identificar patrones que predigan qué juegos tendrán un buen rendimiento en 2017. El proyecto incluye la preparación de datos, el análisis exploratorio de datos y la creación de modelos para comprender la dinámica de la industria del videojuego, orientar las decisiones de inversión y las estrategias publicitarias para optimizar las promociones de videojuegos.
 
