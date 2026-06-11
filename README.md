@@ -1,9 +1,11 @@
 # David Salas - Portfolio de proyectos de Data Analytics
 
 English:
+
 Welcome to my Data Analysis Portfolio! This repository showcases my skills and experience in the field of data analysis. Here, you will find a collection of projects and analyses that demonstrate my ability to extract insights and make data-driven decisions.
 
 Español:
+
 ¡Bienvenido/a a mi portafolio de análisis de datos! Este repositorio muestra mis habilidades y experiencia en el campo del análisis de datos. Aquí encontrarás una colección de proyectos y análisis que demuestran mi capacidad para extraer información valiosa y tomar decisiones basadas en datos.
 
 ## Tech Stack
