@@ -8,6 +8,17 @@ Español:
 
 ¡Bienvenido/a a mi portafolio de análisis de datos! Este repositorio muestra mis habilidades y experiencia en el campo del análisis de datos. Aquí encontrarás una colección de proyectos y análisis que demuestran mi capacidad para extraer información valiosa y tomar decisiones basadas en datos.
 
+
+## Contact me:
+
+🔗LinkedIn: www.linkedin.com/in/davidsalasherrera
+🔗Github: https://github.com/davesh9123-alt
+🔗GitHub Page: https://davesh9123-alt.github.io/
+📧E-mail: davidsalasherrera@outlook.com
+📄English CV: https://docs.google.com/document/d/1s_r3sy7Io3w3-mvWUzh6kqr1f1KiNghobvmMNISvgQw/edit?usp=drive_link
+📄Español CV: https://docs.google.com/document/d/1wQtkImOQZOKNnl2Mfp7vr5nbJZn2BZKpcg4IZOFycFg/edit?usp=drive_link
+
+
 ## Tech Stack
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
