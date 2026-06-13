@@ -163,4 +163,3 @@ Historicamente los generos mas populares (aquellos que suelen ser mas rentables)
 
 - LinkedIn: https://www.linkedin.com/in/davidsalasherrera/
 - E-mail: davidsalasherrera@outlook.com
-- GitHub Page: https://davesh9123-alt.github.io/
