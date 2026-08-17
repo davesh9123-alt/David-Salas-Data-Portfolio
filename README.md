@@ -51,13 +51,15 @@ Español:
 - [Proyecto: Estrategia de Retencion para Model Fitness](https://github.com/davesh9123-alt/S14_Analisis_Retencion_Gimnasio)
 - [Proyecto: Analisis basado en eventos y test A/A/B](https://github.com/davesh9123-alt/S12_Analisis_Eventos_Embudo_Test_AAB)
 - [Proyecto: Analisis de Resultados de Prueba A/B](https://github.com/davesh9123-alt/S11_Analisis_Test_AB_Online_Store)
-- [Proyecto: Analitica de Marketing en Showz (Analisis de Cohortes)](https://github.com/davesh9123-alt/S10_Analitica_Marketing_Showz_Cohortes)
+- [Proyecto: Analitica de Marketing en Showz (Análisis de Cohortes)](https://github.com/davesh9123-alt/S10_Analitica_Marketing_Showz_Cohortes)
 - [Proyecto: ICE Games Sales - ¿Qué juegos son más exitosos?](https://github.com/davesh9123-alt/ICE_games_sales_2016)
 
 
-## [Proyecto: Nuevo embudo de pago - Analisis de pruebas A/B](https://github.com/davesh9123-alt/S16_Analisis_test_AB_embudo_eventos)
+## [Proyecto: Nuevo embudo de pago - Análisis de pruebas A/B](https://github.com/davesh9123-alt/S16_Analisis_test_AB_embudo_eventos)
 
-Una tarea analítica para una tienda en línea internacional. Nuestros predecesores no consiguieron completarla: lanzaron una prueba A/B y luego abandonaron (para iniciar una granja de sandías en Brasil). Solo nos dejaron las especificaciones técnicas y los resultados de las pruebas.
+Este proyecto fue un análisis para una tienda en línea internacional (anónima). El objetivo fue probar la eficacia de una nueva versión del Embudo de Pago, en concreto que busco verificar si el nuevo embudo genera al menos un 10% mas de conversión que el embudo anterior.
+
+**Objetivo:** Mediante un análisis de pruebas A/B, verificar si el nuevo embudo de pago genera al menos un 10% mas de conversión por etapa.
 
 **Descripción técnica**
 
@@ -69,18 +71,15 @@ Una tarea analítica para una tienda en línea internacional. Nuestros predeceso
 - Audiencia: 15% de los nuevos usuarios de la región de la UE
 - Número previsto de participantes de la prueba: 6 000
 
-**Propósito de la prueba**: probar cambios relacionados con la introducción de un sistema de recomendaciones mejorado.
 
-**Resultado esperado**: dentro de los 14 días posteriores a la inscripción, los usuarios mostrarán una mejor conversión en vistas de la página del producto (el evento `product_page`), instancias de agregar artículos al carrito de compras (`product_cart`) y compras (`purchase`). En cada etapa del embudo `product_page → product_cart → purchase`, habrá **al menos un 10% de aumento**.
+## Paso 3 - Análisis Exploratorio: Estudiar la conversión en diferentes etapas del embudo
 
-
-## Estudiar la conversion en diferentes etapas del embudo
-
-Las conversiones de ambos grupos son muy similares, sin embargo la conversion de grupo A (el grupo de control) es ligaramente mejor con un 34.07% de conversion en la etapa de compra, mientras que el grupo B se queda un poco por debajo con 32.37% de conversion. Estos resultados no son muy favorables para el nuevo embudo de pago.
+Las conversiones de ambos grupos son muy similares, sin embargo la conversión de grupo A (el grupo de control) es ligeramente mejor con un 34.07% de conversión en la etapa de compra, mientras que el grupo B se queda un poco por debajo con 32.37% de conversion. Estos resultados no son muy favorables para el nuevo embudo de pago.
 
 <img width="1247" height="699" alt="embudo_gruposAB_output" src="https://github.com/user-attachments/assets/3c7e99f6-1876-4300-b8dc-04dfe25debae" />
 
 <img width="1238" height="699" alt="Conversion_gruposAB_output" src="https://github.com/user-attachments/assets/d1b6f52b-b9cb-4b1f-ba86-54b2509bbc95" />
+
 
 
 ## [Proyecto: Estrategia de Retencion para Model Fitness](https://github.com/davesh9123-alt/S14_Analisis_Retencion_Gimnasio)
