@@ -81,6 +81,29 @@ Las conversiones de ambos grupos son muy similares, sin embargo la conversión d
 <img width="1238" height="699" alt="Conversion_gruposAB_output" src="https://github.com/user-attachments/assets/d1b6f52b-b9cb-4b1f-ba86-54b2509bbc95" />
 
 
+## Distribución de eventos por usuario
+
+Las medias del grupo A y B son relativamente similares (`medias: A=7.46 y B=7.11`). Sin embargo la grafica de distribución de eventos por usuario muestra diferencias notables pese a que la forma o proporción de las distribuciones es similar. Finalmente la prueba nos arroga un resultado algo inesperado. El valor P es significativamente inferior a `alpha=0.05` lo que quiere decir que los grupos no están equilibrados. Debemos seguir explorando los datos para encontrar el motivo de desequilibrio.
+
+<img width="1790" height="490" alt="eventos_usuario_output" src="https://github.com/user-attachments/assets/a4b657b2-f46b-4859-999d-734bf8563e52" />
+
+
+## Distribución de eventos por día
+
+El numero de eventos que suceden por día nos da información sobre la actividad de los usuarios durante el periodo estudiado. El registro comienza el 2020-12-07 y termina el 2020-12-30. El periodo de actividad mas alto fue del 7 de diciembre al 21 de diciembre, esto es probablemente debido a que durante estas fechas el experimento estuvo registrando nuevos usuarios. El 21 de diciembre el registro de nuevos usuarios finalizo. A partir de esa fecha vemos una caída gradual en el numero de eventos, lo que indica que la actividad de los usuarios fue disminuyendo.
+
+<img width="1247" height="545" alt="eventos_por_dia_output" src="https://github.com/user-attachments/assets/b281cbaa-bbec-415e-8a3e-f8d86fbe74b4" />
+
+
+## Paso 4 - Evaluación de resultados de la prueba A/B
+
+Anteriormente durante el análisis exploratorio descubrimos que las muestras de los grupos A y B no estan distribuidos equilibradamente, lo cual simplemente pudo ser un error de distribucion. Sin embargo despues detectamos que hay usuarios que están en ambos grupos, lo cual crea un problema muy grave ya que contamina la validez de la prueba. Entonces, para tratar de solucionar ese problema pensamos que la mejor solucion es eliminar los registros de esos usuarios duplicados, con el fin de tener datos experimentales lo mas limpios posible.
+
+## Conversión con datos limpios
+
+<img width="1238" height="699" alt="conversion_datos_limpios_output" src="https://github.com/user-attachments/assets/1537b8ab-a05c-4bbe-a721-e9800e21194d" />
+
+
 
 ## [Proyecto: Estrategia de Retencion para Model Fitness](https://github.com/davesh9123-alt/S14_Analisis_Retencion_Gimnasio)
 
