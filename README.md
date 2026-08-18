@@ -57,7 +57,7 @@ Español:
 
 ## [Proyecto: Nuevo embudo de pago - Análisis de pruebas A/B](https://github.com/davesh9123-alt/S16_Analisis_test_AB_embudo_eventos)
 
-Este proyecto fue un análisis para una tienda en línea internacional (anónima). El objetivo fue probar la eficacia de una nueva versión del Embudo de Pago, en concreto que busco verificar si el nuevo embudo genera al menos un 10% mas de conversión que el embudo anterior.
+Este proyecto fue un análisis para una tienda en línea internacional (anónima). El objetivo fue probar la eficacia de una nueva versión del Embudo de Pago, en concreto se busco verificar si el nuevo embudo genera al menos un 10% mas de conversión que el embudo anterior en cada etapa.
 
 **Objetivo:** Mediante un análisis de pruebas A/B, verificar si el nuevo embudo de pago genera al menos un 10% mas de conversión por etapa.
 
