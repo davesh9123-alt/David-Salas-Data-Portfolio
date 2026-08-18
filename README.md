@@ -47,7 +47,7 @@ Español:
 
 ## Table of Contents
 
-- [Proyecto: Nuevo embudo de pago - Analisis de pruebas A/B](https://github.com/davesh9123-alt/S16_Analisis_test_AB_embudo_eventos)
+- [Proyecto S16: Nuevo embudo de pago - Analisis de pruebas A/B](https://github.com/davesh9123-alt/S16_Analisis_test_AB_embudo_eventos)
 - [Proyecto: Estrategia de Retencion para Model Fitness](https://github.com/davesh9123-alt/S14_Analisis_Retencion_Gimnasio)
 - [Proyecto: Analisis basado en eventos y test A/A/B](https://github.com/davesh9123-alt/S12_Analisis_Eventos_Embudo_Test_AAB)
 - [Proyecto: Analisis de Resultados de Prueba A/B](https://github.com/davesh9123-alt/S11_Analisis_Test_AB_Online_Store)
@@ -55,7 +55,7 @@ Español:
 - [Proyecto: ICE Games Sales - ¿Qué juegos son más exitosos?](https://github.com/davesh9123-alt/ICE_games_sales_2016)
 
 
-## [Proyecto: Nuevo embudo de pago - Análisis de pruebas A/B](https://github.com/davesh9123-alt/S16_Analisis_test_AB_embudo_eventos)
+## [Proyecto S16: Nuevo embudo de pago - Análisis de pruebas A/B](https://github.com/davesh9123-alt/S16_Analisis_test_AB_embudo_eventos)
 
 Este proyecto fue un análisis para una tienda en línea internacional (anónima). El objetivo fue probar la eficacia de una nueva versión del Embudo de Pago, en concreto se busco verificar si el nuevo embudo genera al menos un 10% mas de conversión que el embudo anterior en cada etapa.
 
