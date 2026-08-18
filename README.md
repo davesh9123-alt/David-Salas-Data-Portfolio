@@ -48,7 +48,7 @@ Español:
 ## Table of Contents
 
 - [Proyecto S16: Nuevo embudo de pago - Analisis de pruebas A/B](https://github.com/davesh9123-alt/S16_Analisis_test_AB_embudo_eventos)
-- [Proyecto: Estrategia de Retencion para Model Fitness](https://github.com/davesh9123-alt/S14_Analisis_Retencion_Gimnasio)
+- [Proyecto S14: Estrategia de Retención para Model Fitness](https://github.com/davesh9123-alt/S14_Analisis_Retencion_Gimnasio)
 - [Proyecto: Analisis basado en eventos y test A/A/B](https://github.com/davesh9123-alt/S12_Analisis_Eventos_Embudo_Test_AAB)
 - [Proyecto: Analisis de Resultados de Prueba A/B](https://github.com/davesh9123-alt/S11_Analisis_Test_AB_Online_Store)
 - [Proyecto: Analitica de Marketing en Showz (Análisis de Cohortes)](https://github.com/davesh9123-alt/S10_Analitica_Marketing_Showz_Cohortes)
@@ -137,7 +137,7 @@ El proposito de la prueba fue probar los cambios relacionados con la introduccio
 
 
 
-## [Proyecto: Estrategia de Retencion para Model Fitness](https://github.com/davesh9123-alt/S14_Analisis_Retencion_Gimnasio)
+## [Proyecto S14: Estrategia de Retención para Model Fitness](https://github.com/davesh9123-alt/S14_Analisis_Retencion_Gimnasio)
 
 En este proyecto trabajamos con la cadena de gimnasios Model Fitness. Nos brindaron datos de sus clientes con la finalidad de analizar el comportamiento de sus usuarios y desarrollar una estrategia de retencion. Es decir, nos pidieron analizar los datos para crear un estrategia para evitar la cancelación de las suscripciones.
 
@@ -153,17 +153,31 @@ Con el fin de combatir la cancelación, Model Fitness ha digitalizado varios de 
 - Analizar los factores que más impactan la pérdida.
 - Sacar conclusiones básicas y elaborar recomendaciones para mejorar la retención de usuarios/as.
 
-**Nota**: Con el fin de predecir la cancelación, para este proyecto aplicamos algunos modelos de aprendizaje automático (Machine Learning).
+
+## Etapas del proyecto
+
+1. Importar librerías, cargar y revisar datos
+2. Análisis Exploratorio de Datos: Distribución de características y matriz de correlación
+3. Construir un modelo para predecir la cancelación de usuarios
+4. Crear clusters de usuarios/as
+5. Conclusiones y recomendaciones
 
 
-## Paso 2 - Análisis Exploratorio de Datos: Matriz de correlación entre características
+## 2 - Análisis Exploratorio de Datos: Distribución de las características
+
+Los histogramas nos permiten ver mas claramente las estadísticas comparativas entre ambos grupos. Por edad, las personas que se quedan tienen una edad promedio de 31-32 años versus las personas que cancelan tienen un promedio de 27-28 años. La grafica de lifetime (tiempo de vida) podemos ver que muchas personas del grupo de cancelación solo tienen 1 a 2 meses, máximo 3 a 4 meses. El grupo de personas que se quedan tiene un pico de 3 meses. El grupo de cancelación en su mayoría hace contratos de solo 1 mes, muy pocos de 6 y 12 meses. El grupo no cancela tiene mas contratos de 6 y 12 meses. Aunque podemos ver mas claramente las diferencias entre ambos grupos también podemos ver muchas similitudes por lo que no tenemos claro aun a que se deben la cancelación.
+
+<img width="1489" height="1190" alt="histogramas_gtm_output" src="https://github.com/user-attachments/assets/dc7d18a0-df77-48b0-b39e-06eacb4f845c" />
+
+
+## 2.1 - Matriz de correlación entre características
 
 La matriz de correlación nos brinda numero mas exacto de la relación entre la cancelación (variable objetivo) y las demás características. Por ejemplo podemos observar que las características de genero y teléfono no tienen ninguna correlación directa con la cancelación por lo que fácilmente podemos ignorar estas características. Por otro lado, las características con mayor relación son lifetime (tiempo), avg_class_frequency_current_month (la frecuencia media de visitas durante el mes en curso) y la edad. El periodo de contrato o suscripción también tiene una correlación a tomar en cuenta.
 
 <img width="1127" height="990" alt="matriz_correlacion_gym_output" src="https://github.com/user-attachments/assets/78271dbb-d515-45ad-b10e-139511c88285" />
 
 
-## Paso 3 - Construir un modelo para predecir la cancelación
+## 3 - Construir un modelo para predecir la cancelación
 
 Entonces tenemos un set de datos donde la cancelación (churn) es nuestra variable objetivo y vemos que las demás características tienen cierta correlación (una correlación media, por así decirlo) con la cancelación. Vamos construir un modelo de aprendizaje automático para tratar de predecir la cancelación. Debido a que la cancelación (churn) es una variable objetivo binaria (0 o 1) podemos implementar un modelo adecuado para esto como de Regresión Logística, pero también vamos usar el modelo de Bosque Aleatorio y comparar sus métricas de exactitud, precisión y recall para determinar que modelo es mejor.
 
@@ -172,17 +186,30 @@ Las métricas de clasificación para ambos modelos son muy similares, sin embarg
 <img width="1165" height="490" alt="modelo_prediccion_gym_output" src="https://github.com/user-attachments/assets/c07dd91b-e555-4c68-bf0f-b966ef04f7ff" />
 
 
-## Paso 4 - Clustering de usuarios
+## 4 - Clustering de usuarios
 
-Le indicamos al modelo que creara 5 clusters. De estos 5 clusters el numero 3 es el mas grande, seguido del 0 y 4. En cuanto a la tasa de cancelacion (churn) el cluster 3 tiene un 0.51 (51%), que es la tasa de cancelacion mas alta. Luego le siguen el cluster 2 y 1 con 0.44 y 0.27 respectivamente. Sin embargo el cluster 3 presenta otros datos que revelan una correlacion con la cancelacion. El tiempo de suscripcion o contrato es de apenas 2 meses (1.95), la frecuencia de visita de este cluster es de apenas 1 vez por semana. Podriamos decir que los usuarios en este clusters solo suelen comprar un suscripcion de un mes y la frecuencia con que van al gimnasio es de una vez por semana o si acaso 2.
+Le indicamos al modelo que creara 5 clusters. De estos 5 clusters el numero 3 es el mas grande, seguido del 0 y 4. En cuanto a la tasa de cancelación (churn) el cluster 3 tiene un 0.51 (51%), que es la tasa de cancelación mas alta. Luego le siguen el cluster 2 y 1 con 0.44 y 0.27 respectivamente. Sin embargo el cluster 3 presenta otros datos que revelan una correlación con la cancelación. El tiempo de suscripción o contrato es de apenas 2 meses (1.95), la frecuencia de visita de este cluster es de apenas 1 vez por semana. Podríamos decir que los usuarios en este clusters solo suelen comprar un suscripción de un mes y la frecuencia con que van al gimnasio es de una vez por semana o si acaso 2.
 
 <img width="1231" height="704" alt="denograma_gym_output" src="https://github.com/user-attachments/assets/cfcdb03c-f2f8-4168-9ae2-93679740465f" />
 
-Por otro lado el cluster 0 y 4 son los mas "leales", su tasa de cancelacion es de apenas 0.03 (2%) y 0.07 (7%). Suelen suscribirse por un periodo de 12 meses y su frecuencia de asistencia al gimnasio es de 2 veces por semana o mas.
+Por otro lado el cluster 0 y 4 son los mas "leales", su tasa de cancelación es de apenas 0.03 (2%) y 0.07 (7%). Suelen suscribirse por un periodo de 12 meses y su frecuencia de asistencia al gimnasio es de 2 veces por semana o mas.
 
-La edad no parece ser un factor determinante en la cancelacion. Mas bien parece ser que aquellas personas que llegan a superar los cuatro meses de asistencia al gimnasio, suelen mantener su suscripcion o extenderla hasta 12 meses. Los usuarios con un lifetime de 2 a 3 meses aun cabe la posibilidad de que cancelen sus suscripciones.
+La edad no parece ser un factor determinante en la cancelación. Mas bien parece ser que aquellas personas que llegan a superar los cuatro meses de asistencia al gimnasio, suelen mantener su suscripción o extenderla hasta 12 meses. Los usuarios con un lifetime de 2 a 3 meses aun cabe la posibilidad de que cancelen sus suscripciones.
 
 <img width="859" height="546" alt="distribucion_clusters_output" src="https://github.com/user-attachments/assets/efb2bc78-af43-4a5e-884d-0c3ebb38449c" />
+
+
+## 5 - Conclusiones y Recomendaciones
+
+En el análisis exploratorio por medio de la matriz de correlaciones encontramos que las características mas correlacionadas con la cancelación (churn) son el lifetime (tiempo) y la frecuencia de asistencia al gimnasio (avg_class_frequency_current_month). Tras aplicar el modelo por clusters y calcular las características promedio por clusters obtuvimos información sobre esas características que nos permite corroborar los resultados. El lifetime (tiempo) nos dice que aquellas personas que logran llegar a mas de cuatro meses de asistencia al gimnasio por un promedio de 2-3 veces por semana, tienen una mayor probabilidad de continuar asistiendo y extender su suscripciones. Por el contrario las personas que han asistido al gimnasio menos de 3 o 2 meses con un promedio de asistencia de 2 veces por semana o menos tienen mayor probabilidad de cancelar su suscripción al gimnasio. En realidad es un linea un poco delgada el umbral que separa a las personas que continúan su suscripción versus las que no, pero esto es suficiente para dar algunas sugerencias hacia donde enfocar la estrategia de retención de clientes.
+
+**Recomendaciones**:
+
+- Promociones o descuentos durante los primeros 3-4 meses. Sabemos que ya se dan descuentos a clientes asociados y por amigos pero podría ser beneficioso dar ese incentivo a los nuevos clientes durante sus primeros meses.
+- Ofrecer beneficios extra los primeros meses.
+- Incentivar la asistencia al gimnasio 2-3 veces por semana minimo.
+- Ofrecer descuentos o beneficios extra al extender su suscripcion pasados los 4 meses de asistencia.
+- Podria ayudar realizar alguna encuesta rapida de 2 o 3 preguntas relacionadas con la asistencia al gimnasio. Esto daria algo de feedback sobre lo que se puede mejorar para hacer la asistencia al gimnasio algo mas agrabable.
 
 
 ## [Proyecto: Análisis basado en eventos y test A/A/B](https://github.com/davesh9123-alt/S12_Analisis_Eventos_Embudo_Test_AAB)
