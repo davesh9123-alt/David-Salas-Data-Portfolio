@@ -84,23 +84,55 @@ Las conversiones de ambos grupos son muy similares, sin embargo la conversión d
 
 ## [Proyecto: Estrategia de Retencion para Model Fitness](https://github.com/davesh9123-alt/S14_Analisis_Retencion_Gimnasio)
 
-En este proyecto trabajamos con la cadena de gimnasios Model Fitness. Nos brindaron datos de sus clientes con la finalidad de analizar el comportamiento de sus usuarios y desarrollar una estrategia de retencion. Es decir, nos pidieron analizar los datos para crear un estrategia para evitar la cancelacion de las suscripciones.
+En este proyecto trabajamos con la cadena de gimnasios Model Fitness. Nos brindaron datos de sus clientes con la finalidad de analizar el comportamiento de sus usuarios y desarrollar una estrategia de retencion. Es decir, nos pidieron analizar los datos para crear un estrategia para evitar la cancelación de las suscripciones.
 
 Los indicadores de pérdida varían de un campo a otro. Si un usuario o una usuaria compra en una tienda en línea con poca frecuencia, pero con regularidad, no se puede decir que ha huido. Pero si durante dos semanas no ha abierto un canal que se actualiza a diario, es motivo de preocupación: es posible que tu seguidor o seguidor/a se haya aburrido y te haya abandonado.
 
 En el caso de un gimnasio, tiene sentido decir que un/a cliente se ha ido si no viene durante un mes. Por supuesto, es posible que estén en Cancún y retomen sus visitas cuando regresen, pero ese no es un caso típico. Por lo general, si un/a cliente se une, viene varias veces y luego desaparece, es poco probable que regrese.
 
+Con el fin de combatir la cancelación, Model Fitness ha digitalizado varios de sus perfiles de clientes. Tu tarea consiste en analizarlos y elaborar una estrategia de retención de clientes.
 
-## Matriz de correlacion entre caracteristicas
+**Objetivos**:
+- Aprender a predecir la probabilidad de pérdida (para el próximo mes) para cada cliente.
+- Elaborar retratos de usuarios típicos: selecciona los grupos más destacados y describe sus características principales.
+- Analizar los factores que más impactan la pérdida.
+- Sacar conclusiones básicas y elaborar recomendaciones para mejorar la retención de usuarios/as.
 
-La matriz de correlacion nos brinda numero mas exacto de la relacion entre la cancelacion (variable objetivo) y las demas caracteristicas. Por ejemplo podemos observar que las caracteristicas de genero y telefono no tienen ninguna correlacion directa con la cancelacion por lo que facilmente podemos ignorar estas caracteristicas. Por otro lado, las caracteristicas con mayor relacion son lifetime (tiempo), avg_class_frequency_current_month (la frecuencia media de visitas durante el mes en curso) y la edad. El periodo de contrato o suscripcion tambien tiene una correlacion a tomar en cuenta.
+**Nota**: Con el fin de predecir la cancelación, para este proyecto aplicamos algunos modelos de aprendizaje automático (Machine Learning).
+
+
+## Paso 2 - Análisis Exploratorio de Datos: Matriz de correlación entre características
+
+La matriz de correlación nos brinda numero mas exacto de la relación entre la cancelación (variable objetivo) y las demás características. Por ejemplo podemos observar que las características de genero y teléfono no tienen ninguna correlación directa con la cancelación por lo que fácilmente podemos ignorar estas características. Por otro lado, las características con mayor relación son lifetime (tiempo), avg_class_frequency_current_month (la frecuencia media de visitas durante el mes en curso) y la edad. El periodo de contrato o suscripción también tiene una correlación a tomar en cuenta.
 
 <img width="1127" height="990" alt="matriz_correlacion_gym_output" src="https://github.com/user-attachments/assets/78271dbb-d515-45ad-b10e-139511c88285" />
 
 
-## [Proyecto: Analisis basado en eventos y test A/A/B](https://github.com/davesh9123-alt/S12_Analisis_Eventos_Embudo_Test_AAB)
+## Paso 3 - Construir un modelo para predecir la cancelación
 
-En este proyecto analizamos el embudo de ventas de una tienda online de productos alimenticios. Investigamos el comportamiento de los usuarios de la app de la empresa. Posteriormente analizamos los resultados de la prueba A/A/B que realizaron. La prueba consistio en cambios en el tipo de fuente para las letras de la aplicacion. Es decir, dos grupos (grupos A) se les dio la version antigua con fuentes originales y el grupo experimental (grupo B) se le dio una version con fuentes nuevas. Nuestra tarea consistio en descubrir que version tiene mejores resultados.
+Entonces tenemos un set de datos donde la cancelación (churn) es nuestra variable objetivo y vemos que las demás características tienen cierta correlación (una correlación media, por así decirlo) con la cancelación. Vamos construir un modelo de aprendizaje automático para tratar de predecir la cancelación. Debido a que la cancelación (churn) es una variable objetivo binaria (0 o 1) podemos implementar un modelo adecuado para esto como de Regresión Logística, pero también vamos usar el modelo de Bosque Aleatorio y comparar sus métricas de exactitud, precisión y recall para determinar que modelo es mejor.
+
+Las métricas de clasificación para ambos modelos son muy similares, sin embargo en la comparación directa tenemos que el modelo de regresión logística es mejor para predecir la cancelación.
+
+<img width="1165" height="490" alt="modelo_prediccion_gym_output" src="https://github.com/user-attachments/assets/c07dd91b-e555-4c68-bf0f-b966ef04f7ff" />
+
+
+## Paso 4 - Clustering de usuarios
+
+Le indicamos al modelo que creara 5 clusters. De estos 5 clusters el numero 3 es el mas grande, seguido del 0 y 4. En cuanto a la tasa de cancelacion (churn) el cluster 3 tiene un 0.51 (51%), que es la tasa de cancelacion mas alta. Luego le siguen el cluster 2 y 1 con 0.44 y 0.27 respectivamente. Sin embargo el cluster 3 presenta otros datos que revelan una correlacion con la cancelacion. El tiempo de suscripcion o contrato es de apenas 2 meses (1.95), la frecuencia de visita de este cluster es de apenas 1 vez por semana. Podriamos decir que los usuarios en este clusters solo suelen comprar un suscripcion de un mes y la frecuencia con que van al gimnasio es de una vez por semana o si acaso 2.
+
+<img width="1231" height="704" alt="denograma_gym_output" src="https://github.com/user-attachments/assets/cfcdb03c-f2f8-4168-9ae2-93679740465f" />
+
+Por otro lado el cluster 0 y 4 son los mas "leales", su tasa de cancelacion es de apenas 0.03 (2%) y 0.07 (7%). Suelen suscribirse por un periodo de 12 meses y su frecuencia de asistencia al gimnasio es de 2 veces por semana o mas.
+
+La edad no parece ser un factor determinante en la cancelacion. Mas bien parece ser que aquellas personas que llegan a superar los cuatro meses de asistencia al gimnasio, suelen mantener su suscripcion o extenderla hasta 12 meses. Los usuarios con un lifetime de 2 a 3 meses aun cabe la posibilidad de que cancelen sus suscripciones.
+
+<img width="859" height="546" alt="distribucion_clusters_output" src="https://github.com/user-attachments/assets/efb2bc78-af43-4a5e-884d-0c3ebb38449c" />
+
+
+## [Proyecto: Análisis basado en eventos y test A/A/B](https://github.com/davesh9123-alt/S12_Analisis_Eventos_Embudo_Test_AAB)
+
+En este proyecto analizamos el embudo de ventas de una tienda online de productos alimenticios. Investigamos el comportamiento de los usuarios de la app de la empresa. Posteriormente analizamos los resultados de la prueba A/A/B que realizaron. La prueba consistió en cambios en el tipo de fuente para las letras de la aplicación. Es decir, dos grupos (grupos A) se les dio la versión antigua con fuentes originales y el grupo experimental (grupo B) se le dio una versión con fuentes nuevas. Nuestra tarea consistió en descubrir que versión tiene mejores resultados.
 
 **Objetivos**: Descubrir que version de la aplicacion tiene mejores resultado para las ventas. Se busca al menos un 10% de mejora en las ventas con la nueva version.
 
