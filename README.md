@@ -212,14 +212,31 @@ En el análisis exploratorio por medio de la matriz de correlaciones encontramos
 - Podria ayudar realizar alguna encuesta rapida de 2 o 3 preguntas relacionadas con la asistencia al gimnasio. Esto daria algo de feedback sobre lo que se puede mejorar para hacer la asistencia al gimnasio algo mas agrabable.
 
 
-## [Proyecto: Análisis basado en eventos y test A/A/B](https://github.com/davesh9123-alt/S12_Analisis_Eventos_Embudo_Test_AAB)
+## [Proyecto S12: ¿Que versión de una app es mejor? - Análisis basado en eventos y Pruebas A/A/B](https://github.com/davesh9123-alt/S12_Analisis_Eventos_Embudo_Test_AAB)
 
-En este proyecto analizamos el embudo de ventas de una tienda online de productos alimenticios. Investigamos el comportamiento de los usuarios de la app de la empresa. Posteriormente analizamos los resultados de la prueba A/A/B que realizaron. La prueba consistió en cambios en el tipo de fuente para las letras de la aplicación. Es decir, dos grupos (grupos A) se les dio la versión antigua con fuentes originales y el grupo experimental (grupo B) se le dio una versión con fuentes nuevas. Nuestra tarea consistió en descubrir que versión tiene mejores resultados.
+En este proyecto analizamos el embudo de ventas de una tienda online de productos alimenticios. Investigamos el comportamiento de los usuarios de la app de la empresa. Posteriormente analizamos los resultados de la prueba A/A/B que se realizó. La prueba consistió en cambios en el tipo de fuente para las letras de la aplicación. Es decir, al primer grupo (grupo A) se les dio la versión antigua con fuentes originales y el grupo experimental (grupo B) se le dio una versión con fuentes nuevas. Nuestra tarea consistió en descubrir que versión tiene mejor conversión. Se predijo al menos un 10% de mejor conversión para la nueva versión.
 
-**Objetivos**: Descubrir que version de la aplicacion tiene mejores resultado para las ventas. Se busca al menos un 10% de mejora en las ventas con la nueva version.
+**Objetivos**: Descubrir que versión de la aplicación tiene mejores resultado para las ventas. Se busca al menos un 10% de mejora en la conversión con la nueva versión.
 
 
-## ¿Que proporcion de usuarios pasan de una etapa a la siguiente? - Enbudo de Eventos
+## Preguntas clave
+
+- ¿Que proporción de usuarios pasan de una etapa a la siguiente?
+- ¿En que etapa se pierden mas usuarios?
+- ¿Que porcentaje de usuarios hace todo el viaje desde el primer evento hasta el pago?
+
+
+## Etapas del Proyecto
+
+1. Importar librerias, cargar y revisar datos
+2. Preparar datos para analisis
+3. Analisis Exploratorio: Estudiar y comprobar los datos obtenidos
+4. Estudiar embudo de eventos
+5. Estudiar resultados del experimento
+6. Conclusiones
+
+
+## 3 - Análisis Exploratorio: ¿Que proporción de usuarios pasan de una etapa a la siguiente?
 
 De acuerdo a los resultados del embudo de eventos, la etapa en la que se pierden mas usuarios es de Main Screen a Offers Screen. Solo 61.9% de la etapa anterior continuan hacia la pagina de Offers. Cerca de un 40% de usuarios no pasan de la Main Screen a la etapa siguiente.
 
@@ -232,7 +249,21 @@ De acuerdo a los resultados del embudo de eventos, la etapa en la que se pierden
 <img width="1223" height="362" alt="Screenshot_20260604164037" src="https://github.com/user-attachments/assets/437ecf68-16d3-42b2-9319-56bbad32abd9" />
 
 
-## [Proyecto: Analisis de Resultados de Prueba A/B](https://github.com/davesh9123-alt/S11_Analisis_Test_AB_Online_Store)
+## 4 - Resultados de las pruebas de Hipótesis para el test A/A/B
+
+Realizamos las pruebas con dos diferentes valores de significancia alpha, 0.05 y 0.01. En ambos, los resultados fueron similares. Parece que modificar las fuentes no ha tenido ningún efecto en el comportamiento de los usuarios al usar la app. Los resultados de los grupos de control y el grupo experimental se muestran muy similares y según la prueba realizada podemos concluir que no ha causado ninguna diferencia el modificar las fuentes de la app.
+
+<img width="707" height="574" alt="Screenshot_20260604164409" src="https://github.com/user-attachments/assets/eb349339-a061-4d4f-93bd-f9e40b77bdf2" />
+
+
+## 6 - Conclusiones
+
+Los resultados parecen ser bastante concluyentes. Aun combinando ambos grupos de control contra el grupo experimental, el resultado de la prueba nos dice que no hay diferencia significativa entre los grupos. Esto quiere decir que el grupo experimental no ha dado resultados negativos pero tampoco positivos. Simplemente, los cambios en las fuentes de la app no han provocado cambio alguno pues el comportamiento de los usuarios es prácticamente igual.
+
+El objetivo no fue logrado, no existe una diferencia significativa en los grupos.
+
+
+## [Proyecto: Análisis de Resultados de Prueba A/B](https://github.com/davesh9123-alt/S11_Analisis_Test_AB_Online_Store)
 
 El objetivo de este proyecto fue analizar los resultados de una prueba A/B realizada por una tienda online anonima. Se nos proporcionaros los datos de los resultados generados por las pruebas y nuestra tarea fue verificar la validez y confiabilidad de los datos, un analisis exploratorio de los resultados obtenidos por ambos grupos (A y B) y finalmente la aplicacion de pruebas de significancia estadistica para determinar con mayor rigor las diferencia entre los grupos experimentales.
 
