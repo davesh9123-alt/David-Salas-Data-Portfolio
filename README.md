@@ -263,9 +263,17 @@ Los resultados parecen ser bastante concluyentes. Aun combinando ambos grupos de
 El objetivo no fue logrado, no existe una diferencia significativa en los grupos.
 
 
-## [Proyecto: Análisis de Resultados de Prueba A/B](https://github.com/davesh9123-alt/S11_Analisis_Test_AB_Online_Store)
+## [Proyecto S11: Analisis de visitas y ventas online (Analisis de Pruebas A/B)](https://github.com/davesh9123-alt/S11_Analisis_Test_AB_Online_Store)
 
-El objetivo de este proyecto fue analizar los resultados de una prueba A/B realizada por una tienda online anonima. Se nos proporcionaros los datos de los resultados generados por las pruebas y nuestra tarea fue verificar la validez y confiabilidad de los datos, un analisis exploratorio de los resultados obtenidos por ambos grupos (A y B) y finalmente la aplicacion de pruebas de significancia estadistica para determinar con mayor rigor las diferencia entre los grupos experimentales.
+El objetivo de este proyecto fue analizar los resultados de una prueba A/B realizada por una tienda online anónima. Se nos proporcionaros los datos de los resultados generados por las pruebas y nuestra tarea fue verificar la validez y confiabilidad de los datos, un análisis exploratorio de los resultados obtenidos por ambos grupos (A y B) y finalmente la aplicación de pruebas de significancia estadística para determinar con mayor rigor las diferencia entre los grupos experimentales.
+
+
+## Preguntas clave
+
+- ¿Cual fue el ingreso de cada grupo por separado?
+- ¿Como fueron el volumen de pedidos por grupo?
+- ¿Cual fue la diferencia relativa entre los pedidos promedio de cada grupo?
+- ¿Cual fue la tasa de conversión diaria por grupo?
 
 
 ## ¿Cual fue el ingreso de cada grupo por separado?
@@ -273,6 +281,47 @@ El objetivo de este proyecto fue analizar los resultados de una prueba A/B reali
 La grafica muestra como los ingresos de ambos grupos fueron muy similares los primeros 5 dias. Posteriormente los ingresos acumulados del grupo B se incrementaron un poco mas que el grupo A y a partir del dia 13 los ingresos del grupo B fueron claramente superiores que los del grupo A. Al final, los ingresos del grupo A fueron: 64554.9, mientras que los ingresos del grupo B fueron: 92840.6. Esto es (64554.9 / 92840.6) x 100 = 69.53 %, es decir que el grupo B tuvo un poco mas de 30% mas de ingresos que el grupo A.
 
 <img width="1179" height="582" alt="Screenshot_20260604142226" src="https://github.com/user-attachments/assets/91bce844-93d7-4d6f-9ed4-e58bddc0db16" />
+
+
+## ¿Como fueron el volumen de pedidos por grupo?
+
+La grafica muestra un comportamiento interesante respecto al tamaño de pedidos promedio acumulados a lo largo del experimento. 
+
+- Grupo A: El grupo A comenzó arriba del grupo B, pero durante los primeros dias fue a la baja, para posteriormente comenzar a tener un repunte y superar durante algunos dias al grupo B. Despues de lo cual descendio un poco para mantener cierta estabilidad el resto de los dias del experimento.
+- Grupo B: El grupo B comenzo abajo del grupo A, pero los primeros dias su comportamiento fue hacia arriba superando por 9 dias al grupo A: Luego el grupo A logro superar al grupo B durante unos dias, mientras que el grupo B se mantuvo con cierta estabilidad. El dia 19 el grupo B tuvo un brusco repunte, superando por mucho al grupo A que se mantuvo estable el resto del experimento. El grupo B mantuvo esa ventaja con cierta estabilidad el resto de los dias.
+- Nuevamente los resultados del Test A/B son favorables para el grupo B.
+
+<img width="1181" height="588" alt="Screenshot_20260604142431" src="https://github.com/user-attachments/assets/ead7660e-a183-43aa-88d2-0e383c3bbc02" />
+
+
+## ¿Cual fue la diferencia relativa entre los pedidos promedio de cada grupo?
+
+La grafica anterior nos permite ver con exactitud cual fue la diferencia porcentual día con día del grupo B con respecto al grupo A en lo referente al tamaño de pedido promedio acumulado. En realidad hay dos periodos durante los cuales el grupo A fue superior al grupo B, al inicio y en un periodo intermedio. El punto inicial fue el punto mas bajo del grupo B, donde tuvo una diferencia relativa negativa de -21.4% y luego en un punto intermedio con -18.3%. Sin embargo la diferencia relativa mas notable fue cuando el grupo B supero al grupo A por un 41.4%. Al final el grupo B logro una diferencia porcentual relativa positiva del 23.8% con respecto al grupo A.
+
+<img width="1176" height="582" alt="Screenshot_20260604142605" src="https://github.com/user-attachments/assets/513fefac-1784-490e-b383-a6feb4603943" />
+
+
+## ¿Cual fue la tasa de conversión diaria por grupo?
+
+Debemos observar como la tasa de conversión entre ambos grupos se mantiene en un rango de entre poco mas de 1% hasta poco mas de 6%. El punto mas alto en la tasa de conversion lo tuvo el grupo B con un 6.23%, sin embargo también obtuvo el punto de conversión mas bajo con un 1.22%.
+
+La tasa de conversión promedio del grupo B fue ligeramente superior que la del grupo A. No podríamos asumir con seguridad si esta diferencia es realmente significativa, aun con los resultados positivos de los analisis anteriores para el grupo B.
+
+<img width="1266" height="539" alt="Screenshot_20260604142721" src="https://github.com/user-attachments/assets/07d44747-48f8-4337-bff6-4f65effc01ac" />
+
+
+## Resultados de las pruebas de hipótesis estadísticas
+
+Realizamos la prueba T Student y la prueba Mann-Whitney. En ambos casos el resultado fue que no hay diferencias significativas en el tamaño promedio de compra de los grupos A y B. En la prueba anterior, donde no habiamos filtrado los valores extremos, el resultado era similar. Entonces, según los resultados de las pruebas, no hay una diferencia significativa entre los grupos A y B.
+
+<img width="1341" height="807" alt="Screenshot_20260604143111" src="https://github.com/user-attachments/assets/ad621e90-1c79-42f9-a6d8-9807aae257fb" />
+
+
+## Conclusiones y recomendaciones
+
+La recomendación para este caso según los análisis realizados, los resultados de las pruebas y la evidencia recogida es que deberíamos detener la prueba y concluir que no hay diferencia entre los grupos. La diferencias observadas en los grupos se debió principalmente a los valores extremos encontrados en el grupo B, que provocaron que los resultados de varios análisis fueran favorables para este grupo. Al eliminar estos valores atípicos pudimos observar que no hay una diferencia notable entre los grupos.
+
+* Recomendación: Detener la prueba y concluir que no hay diferencias significativas entre los grupos A y B.
 
 
 ## [Proyecto: Analitica de Marketing en Showz (Analisis de Cohortes)](https://github.com/davesh9123-alt/S10_Analitica_Marketing_Showz_Cohortes)
