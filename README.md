@@ -50,7 +50,6 @@ Español:
 - [Proyecto S16: Nuevo embudo de pago - Analisis de pruebas A/B](https://github.com/davesh9123-alt/S16_Analisis_test_AB_embudo_eventos)
 - [Proyecto S14: Estrategia de Retención para Model Fitness](https://github.com/davesh9123-alt/S14_Analisis_Retencion_Gimnasio)
 - [Proyecto S12: ¿Que versión de una app es mejor? - Análisis basado en eventos y Pruebas A/A/B](https://github.com/davesh9123-alt/S12_Analisis_Eventos_Embudo_Test_AAB)
-- [Proyecto: Analisis de Resultados de Prueba A/B](https://github.com/davesh9123-alt/S11_Analisis_Test_AB_Online_Store)
 - [Proyecto: Analitica de Marketing en Showz (Análisis de Cohortes)](https://github.com/davesh9123-alt/S10_Analitica_Marketing_Showz_Cohortes)
 - [Proyecto: ICE Games Sales - ¿Qué juegos son más exitosos?](https://github.com/davesh9123-alt/ICE_games_sales_2016)
 
@@ -324,31 +323,8 @@ La recomendación para este caso según los análisis realizados, los resultados
 * Recomendación: Detener la prueba y concluir que no hay diferencias significativas entre los grupos A y B.
 
 
-## [Proyecto: Analitica de Marketing en Showz (Analisis de Cohortes)](https://github.com/davesh9123-alt/S10_Analitica_Marketing_Showz_Cohortes)
 
-El objetivo de este analisis fue optimizar los gastos de Marketing de la tienda online Showz,  una de las tiendas en línea más populares y confiables a nivel mundial para coleccionistas de figuras de acción.
-
-
-## Resultados del analisis de cohortes y la tasa de retencion
-
-El mapa de calor muestra mas claramente como la retencion disminuye a lo largo de los meses siguientes a la primera visita. Hay cohortes que mantienen una retencion mas alta, pero en general disminuyen a lo largo del tiempo. Tambien podemos observar que las primeras cohortes parecen tener una mayor rentecion los primeros meses que las cohortes mas nuevas, al menos en el periodo de tiempo que examinamos. La cohorte de 2017-06 (junio 2017), es decir, la primera cohorte, es la que presenta una mayor rentencion.
-
-<img width="1015" height="619" alt="Screenshot_20260604133835" src="https://github.com/user-attachments/assets/91f0134c-ef34-4c2e-9e54-af19a760bfd8" />
-
-
-## [Proyecto: ICE Games Sales - ¿Qué juegos son más exitosos?](https://github.com/davesh9123-alt/ICE_games_sales_2016)
-
-Este análisis se centra en los factores que influyen en el éxito de los videojuegos vendidos en la tienda online de ICE. Utilizando datos de 2016 sobre reseñas de usuarios y expertos, géneros, plataformas y ventas históricas, el objetivo es identificar patrones que predigan qué juegos tendrán un buen rendimiento en 2017. El proyecto incluye la preparación de datos, el análisis exploratorio de datos y la creación de modelos para comprender la dinámica de la industria del videojuego, orientar las decisiones de inversión y las estrategias publicitarias para optimizar las promociones de videojuegos.
-
-
-## Generos de videojuegos mas populares historicamente
-
-Historicamente los generos mas populares (aquellos que suelen ser mas rentables) son los generos de Accion, Disparos y Deportes. Este tendencia se mantiene a lo largo de varias generaciones de consolas.
-
-<img width="873" height="604" alt="genre_top_games" src="https://github.com/user-attachments/assets/b2d4de8a-e35c-4228-aacf-bdc16c4c21a1" />
-
-
-## Contact me
+## [Contact me]
 
 - LinkedIn: https://www.linkedin.com/in/davidsalasherrera/
 - E-mail: davidsalasherrera@outlook.com
