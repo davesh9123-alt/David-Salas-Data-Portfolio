@@ -50,8 +50,6 @@ Español:
 - [Proyecto S16: Nuevo embudo de pago - Analisis de pruebas A/B](https://github.com/davesh9123-alt/S16_Analisis_test_AB_embudo_eventos)
 - [Proyecto S14: Estrategia de Retención para Model Fitness](https://github.com/davesh9123-alt/S14_Analisis_Retencion_Gimnasio)
 - [Proyecto S12: ¿Que versión de una app es mejor? - Análisis basado en eventos y Pruebas A/A/B](https://github.com/davesh9123-alt/S12_Analisis_Eventos_Embudo_Test_AAB)
-- [Proyecto: Analitica de Marketing en Showz (Análisis de Cohortes)](https://github.com/davesh9123-alt/S10_Analitica_Marketing_Showz_Cohortes)
-- [Proyecto: ICE Games Sales - ¿Qué juegos son más exitosos?](https://github.com/davesh9123-alt/ICE_games_sales_2016)
 
 
 ## [Proyecto S16: Nuevo embudo de pago - Análisis de pruebas A/B](https://github.com/davesh9123-alt/S16_Analisis_test_AB_embudo_eventos)
